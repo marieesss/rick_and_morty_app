@@ -1,12 +1,9 @@
 import { useState, useEffect} from "react";
-import InfiniteScroll from "react-infinite-scroll-component";
-
-
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
 import Cards from "./components/cards/Cards";
 import Filter from "./components/filters/Filter";
+import Pagination from "./components/pagination/Pagination";
 
 
 function App() {
@@ -39,6 +36,7 @@ function App() {
       </div>
 
     </div>
+    <Pagination setPageNumber={setPageNumber} />
     </div>
   );
 }
