@@ -1,4 +1,7 @@
 import { useState, useEffect} from "react";
+import InfiniteScroll from "react-infinite-scroll-component";
+
+
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
@@ -18,6 +21,7 @@ function App() {
     (async function () {
       let data = await fetch(api).then((res) => res.json());
       setFetchedData(data);
+      console.log(data);
     })();
   }, [api]);
 
