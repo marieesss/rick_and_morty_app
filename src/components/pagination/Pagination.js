@@ -13,7 +13,7 @@ const Pagination = ({info, pageNumber, setPageNumber}) => {
     pageClassName='page-item'
     pageLinkClassName='page-link'
     activeClassName='active'
-    forcePage={pageNumber===1? 0 : pageNumber-1}
+    // forcePage={pageNumber===1? 0 : pageNumber-1}
     onPageChange={(data)=>{setPageNumber(data.selected+1)}}
     pageCount={info?.pages}/>
   )
